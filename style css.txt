@@ -1,4 +1,4 @@
-/* Place your CSS styles in this file */
+
 
 h1 {
     text-align:center;
