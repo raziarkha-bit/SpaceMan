@@ -15,7 +15,7 @@ h1 {
     color: yellow; 
 }
 
-/* Mengatur paragraf quote */
+
 p {
     text-align: center;
     font-family: Arial, sans-serif;
