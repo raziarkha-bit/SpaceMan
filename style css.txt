@@ -7,7 +7,7 @@ h1 {
      background-color:aqua;} 
                     
 
-   body{background-color:aqua}
+   body{background-color:aqua;}
 ul{list-style-type:none;}
 background-color:aqua;
 Li{display:inline;}
