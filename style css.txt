@@ -5,14 +5,14 @@ body {
     border: 2px solid yellow;
     border-radius: 12px;
     padding: 20px;
-    color: white; /* Saya ganti putih agar tulisan terlihat di bg biru */
+    color: white; 
 }
 
 h1 {
     text-align: center;
     font-family: "Source Sans Pro", sans-serif;
     font-weight: bold;
-    color: yellow; /* Ganti kuning agar tidak tabrakan dengan bg biru */
+    color: yellow; 
 }
 
 /* Mengatur paragraf quote */
@@ -22,12 +22,12 @@ p {
     color: white;
 }
 
-/* Mengatur teks puisi dalam tag pre */
+
 pre {
     text-align: center;
     font-family: 'Franklin Gothic Medium', sans-serif;
     color: #000; /* Hitam agar terbaca di area tertentu atau ganti sesukamu */
-    background-color: rgba(255, 255, 255, 0.7); /* Memberi background transparan agar teks terbaca */
+    background-color: rgba(255, 255, 255, 0.7); 
     padding: 10px;
 }
 
