@@ -1,15 +1,34 @@
 
 
-h1 {
-    text-align:center;
-    font-family:"source sans pro", sans-serif-serif;
-    font-weight: bold;
-     background-color:aqua;} 
-                    
+body {
+    background-color: aqua; 
+    margin: 0;
+    padding: 20px;
+}
 
-   body{background-color:aqua}
-ul{list-style-type:none;}
-background-color:aqua;
-Li{display:inline;}
-ul{background-color:aqua;}
-border:4px solid 
+h1 {
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif; 
+    font-weight: bold;
+    background-color: aqua; 
+}
+
+ul {
+    list-style-type: none;
+    background-color: aqua; 
+    padding: 10px;
+    border: 4px solid grey; 
+    text-align: center;
+}
+
+li {
+    display: inline;
+    margin: 0 15px;
+}
+
+
+li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
