@@ -8,7 +8,9 @@ h1 {
                     
 
    body{background-color:aqua}
-ul{list-style-type:none;}
+ul{list-style-type:none:
+border : 4 px solid grey:
+}
 background-color:aqua;
 Li{display:inline;}
 ul{background-color:aqua;}
