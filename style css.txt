@@ -1,13 +1,13 @@
 
 
 h1 {
-    text-align:center;
-    font-family:"source sans pro", sans-serif-serif;
+    text-align: center;
+    font-family: "source sans pro", sans-serif-serif;
     font-weight: bold;
-     background-color:aqua;} 
+     
                     
 
-   body{background-color:aqua}
+   body{background-color: aqua}
 ul{list-style-type:none:
 border : 4 px solid grey:
 }
