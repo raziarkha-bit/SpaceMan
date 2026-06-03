@@ -14,7 +14,7 @@ body {background-color: aqua;
     color:blue;
     }
 
- ul {.navbar {
+  .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
