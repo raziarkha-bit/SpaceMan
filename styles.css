@@ -15,8 +15,7 @@ body {
 
 
 .logo-box {
-    border: 2px solid white; 
-    border-radius: 8px;
+    
     padding: 15px;
     display: inline-flex; 
     flex-direction: column;
