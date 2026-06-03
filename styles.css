@@ -14,9 +14,48 @@ body {background-color: aqua;
     color:blue;
     }
 
- ul {list-style-type: none; 
- background-color: blanchedalmond; 
- border:4px solid red
- }
+ ul {.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    background-color: black; 
+    width: 100%;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.nav-item {
+    text-decoration: none;
+    color: silver;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px; 
+    text-transform: uppercase; 
+    font-family: 'Poppins', sans-serif; 
+    transition: all 0.3s ease;
+}
+
+
+.nav-item:hover {
+    color: cyan;
+    text-shadow: 0 0 10px cyan; 
+}
+
+
+.separator {
+    width: 6px;
+    height: 6px;
+    background-color: cyan; 
+    border-radius: 50%;
+    box-shadow: 0 0 8px cyan;
+}
 
 li{display:inline;}
