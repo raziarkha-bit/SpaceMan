@@ -6,27 +6,27 @@ h1 {
 }
  
 body {
-    background-image: url('https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=1920'); /* Bisa diganti dengan link gambar luar angkasamu sendiri */
+    background-image: url('https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=1920'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: white; /* Memastikan semua teks bawaan berwarna putih agar terbaca */
+    color: white;
 }
 
-/* 2. Membuat wadah/border pembungkus di kiri atas */
+
 .logo-box {
-    border: 2px solid white; /* Garis pembatas kotak */
+    border: 2px solid white; 
     border-radius: 8px;
     padding: 15px;
-    display: inline-flex; /* Agar lebar kotak pas mengikuti isi jalurnya saja */
+    display: inline-flex; 
     flex-direction: column;
     align-items: flex-start;
-    background-color: rgba(0, 0, 0, 0.4); /* Efek gelap transparan di dalam kotak */
+    background-color: rgba(0, 0, 0, 0.4); 
     margin-top: 10px;
     margin-left: 10px;
 }
 
-/* Kotak baris untuk menyejajarkan gambar logo dengan tulisan Spaceman */
+
 .logo-header {
     display: flex;
     align-items: center;
@@ -34,24 +34,24 @@ body {
     margin-bottom: 5px;
 }
 
-/* Mengatur ukuran logo gambar di dalam kotak */
+
 .spaceman-logo-img {
     width: 45px;
     height: auto;
 }
 
-/* Tulisan merek "Spaceman" di sebelah gambar */
+
 .logo-brand-text {
     font-size: 20px;
     font-weight: bold;
 }
 
-/* Mengatur gaya tulisan h1 (welcome to our space) agar rapi di dalam kotak */
+
 .logo-box h1 {
     margin: 0;
     font-size: 14px;
     font-weight: normal;
-    color: #00ffff; /* Warna cyan cerah khas luar angkasa */
+    color: cyan;
 }
 
 marquee {
