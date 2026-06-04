@@ -1,76 +1,79 @@
-h1 {
-    text-align: center;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: bold;
-    color: cyan;
+/* ==================== RESET & BASE STYLES ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
- 
+
 body {
     background-image: url('https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=1920'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     color: white;
-}
-
-
-.logo-box {
-    
-    padding: 15px;
-    display: inline-flex; 
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    background-color: rgba(0, 0, 0, 0.4); 
-    margin-top: 10px;
-    margin-left: 10px;
+    position: relative;
 }
 
+/* ==================== KOTAK LOGO (KIRI ATAS) ==================== */
+.logo-box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 15px 25px;
+    /* Efek Kaca Transparan (Glassmorphism) */
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: transform 0.3s ease;
+}
+
+.logo-box:hover {
+    transform: translateY(-3px);
+}
 
 .logo-header {
     display: flex;
     align-items: center;
-    gap: 12px;
-    margin-bottom: 5px;
+    gap: 15px;
 }
-
 
 .spaceman-logo-img {
-    width: 45px;
-    height: auto;
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 8px cyan);
 }
-
 
 .logo-brand-text {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1px;
+    /* Efek Gradasi Teks Merek Menggunakan Nama Warna */
+    background: linear-gradient(45deg, white, cyan);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-
-.logo-box h1 {
-    margin: 0;
-    font-size: 14px;
-    font-weight: normal;
-    color: cyan;
-}
-
-marquee {
-  color: cyan; 
-  font-family: sans-serif;
-  font-weight: bold;
-}
-.p2 {text-align: center;
-    color:silver;
-    }
-
-  .navbar {
+/* ==================== NAVIGATION BAR (NAVBAR) ==================== */
+.navbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px 0;
-    background-color: black; 
+    padding: 20px 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
+    backdrop-filter: blur(5px);
     width: 100%;
+    margin-top: 130px; /* Jarak aman agar tidak bertabrakan dengan logo di atas */
+    border-bottom: 1px solid rgba(0, 255, 255, 0.1);
 }
-
 
 .nav-links {
     list-style: none;
@@ -79,31 +82,56 @@ marquee {
     gap: 40px;
 }
 
-
 .nav-item {
     text-decoration: none;
     color: silver;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 600;
     letter-spacing: 2px; 
     text-transform: uppercase; 
-    font-family: 'Poppins', sans-serif; 
     transition: all 0.3s ease;
 }
 
-
+/* Efek Menyala Saat Menu Disorot */
 .nav-item:hover {
     color: cyan;
-    text-shadow: 0 0 10px cyan; 
+    text-shadow: 0 0 15px cyan, 0 0 30px cyan; 
 }
 
-
+/* Titik Pembatas Menu */
 .separator {
-    width: 6px;
-    height: 6px;
-    background-color: cyan; 
+    width: 8px;
+    height: 8px;
+    background-color: cyan;
     border-radius: 50%;
-    box-shadow: 0 0 8px cyan;
+    box-shadow: 0 0 10px cyan, 0 0 20px cyan;
 }
 
+/* ==================== KOTAK TEKS KONTEN ==================== */
+.content-container {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 30px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6); /* Latar belakang transparan agar teks terbaca jelas */
+    border-radius: 16px;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
 
+.p2 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: lightgray;
+    margin-bottom: 15px;
+}
+
+.sub-text {
+    color: cyan;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    margin-bottom: 0;
+}
